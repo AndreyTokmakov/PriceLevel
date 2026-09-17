@@ -9,6 +9,7 @@ Description : PriceLadder.cpp
 
 #include "PriceLadder.hpp"
 
+
 namespace price_ladder
 {
     PriceLadder::PriceLadder(const Price minPriceTick, const Price maxPriceTick) noexcept:
