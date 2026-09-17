@@ -18,6 +18,7 @@ else()
     set(THIRD_PARTY_DIR /home/andtokm/Projects/third_party)
 endif()
 
-add_subdirectory(price_ladder)
+add_subdirectory(PriceLadder)
+add_subdirectory(PriceLadder_SepBidsAsks)
 add_subdirectory(price_level)
 add_subdirectory(utilities)
