@@ -47,7 +47,7 @@ namespace testing
     {
         if (expected != actual)
         {
-            std::println(std::cerr, "{}: {} != {}", message, expected, actual);
+            // std::println(std::cerr, "{}: {} != {}", message, expected, actual);
             printLocation(location);
             performAction(action);
         }

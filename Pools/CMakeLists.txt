@@ -13,7 +13,11 @@ add_executable(${PROJECT_NAME}
         PoolOne.cpp
 )
 
+target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/utilities")
+target_link_directories(${PROJECT_NAME} PUBLIC "${CMAKE_BINARY_DIR}/utilities")
+
 TARGET_LINK_LIBRARIES(${PROJECT_NAME}
+        utils
         pthread
         ${EXTRA_LIBS}
 )
