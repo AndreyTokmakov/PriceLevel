@@ -9,9 +9,16 @@ add_compile_options(-c -Wall -O3 -std=c++26)
 
 add_executable(${PROJECT_NAME}
         main.cpp
+        OrderPool_Indexed.hpp
+        Order.hpp
+        OrderPool.hpp
 )
 
+target_include_directories(${PROJECT_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/utilities")
+target_link_directories(${PROJECT_NAME} PUBLIC "${CMAKE_BINARY_DIR}/utilities")
+
 TARGET_LINK_LIBRARIES(${PROJECT_NAME}
+        utils
         pthread
         ${EXTRA_LIBS}
 )
